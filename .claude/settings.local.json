@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/aramirez/Code/ecommerce log --oneline -10)",
+      "Bash(git -C /Users/aramirez/Code/ecommerce show --stat 77ba67d)",
+      "Bash(npx create-next-app:*)",
+      "Bash(npx create-next-app@latest:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm run lint:*)",
+      "Bash(tree:*)",
+      "WebSearch",
+      "WebFetch(domain:tilopay.com)",
+      "WebFetch(domain:documenter.getpostman.com)"
+    ]
+  }
+}
