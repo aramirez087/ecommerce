@@ -12,15 +12,17 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         ref={ref}
         className={cn(
-          'inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
+          'inline-flex items-center justify-center rounded-full font-semibold tracking-[0.02em] transition-all duration-300',
+          'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2',
+          'focus-visible:ring-offset-[var(--background)] disabled:pointer-events-none disabled:opacity-50',
           {
-            'bg-neutral-900 text-white hover:bg-neutral-800': variant === 'primary',
-            'bg-neutral-100 text-neutral-900 hover:bg-neutral-200': variant === 'secondary',
-            'border border-neutral-300 bg-transparent hover:bg-neutral-100': variant === 'outline',
+            'bg-[linear-gradient(135deg,var(--accent),var(--accent-strong))] text-white shadow-[0_18px_42px_-24px_rgba(20,49,35,0.95)] hover:-translate-y-0.5 hover:shadow-[0_22px_48px_-24px_rgba(20,49,35,0.88)]': variant === 'primary',
+            'border border-white/70 bg-white/75 text-neutral-900 backdrop-blur-sm hover:bg-white/90': variant === 'secondary',
+            'border border-neutral-300/80 bg-transparent text-neutral-800 hover:bg-white/55': variant === 'outline',
           },
           {
-            'h-8 px-3 text-sm': size === 'sm',
-            'h-10 px-4 text-sm': size === 'md',
+            'h-9 px-4 text-sm': size === 'sm',
+            'h-11 px-5 text-sm': size === 'md',
             'h-12 px-6 text-base': size === 'lg',
           },
           className

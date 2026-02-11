@@ -11,13 +11,18 @@ export async function FeaturedProducts() {
   }
 
   return (
-    <section className="py-16">
+    <section className="py-16 lg:py-20">
       <Container>
-        <div className="flex items-center justify-between mb-8">
-          <h2 className="text-2xl font-bold text-neutral-900">Featured Products</h2>
+        <div className="mb-8 flex items-end justify-between gap-4">
+          <div>
+            <p className="mb-2 text-xs font-semibold tracking-[0.14em] text-neutral-600 uppercase">
+              Handpicked Collection
+            </p>
+            <h2 className="text-3xl font-semibold text-neutral-900">Featured Pieces</h2>
+          </div>
           <Link
             href="/products"
-            className="text-sm font-medium text-neutral-600 hover:text-neutral-900"
+            className="text-xs font-semibold tracking-[0.1em] text-neutral-600 uppercase hover:text-neutral-900"
           >
             View all
           </Link>

@@ -7,12 +7,12 @@ const navLinks = [
 
 export function Navigation() {
   return (
-    <nav className="flex items-center gap-6">
+    <nav className="flex items-center gap-3 sm:gap-6">
       {navLinks.map((link) => (
         <Link
           key={link.href}
           href={link.href}
-          className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors"
+          className="text-[0.68rem] font-semibold tracking-[0.11em] text-neutral-600 uppercase transition-colors hover:text-neutral-900 sm:text-xs"
         >
           {link.label}
         </Link>

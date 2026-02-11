@@ -4,7 +4,7 @@ import { Container } from '@/components/layout/Container'
 import { AccountSidebar } from '@/components/account'
 
 export const metadata = {
-  title: 'My Account - Store',
+  title: 'My Account - Velvet Toke',
   description: 'Manage your account',
 }
 

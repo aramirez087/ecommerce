@@ -21,7 +21,7 @@ const statusColors = {
 export async function generateMetadata({ params }: OrderDetailPageProps) {
   const { id } = await params
   return {
-    title: `Order Details - Store`,
+    title: `Order Details - Velvet Toke`,
     description: `View order ${id}`,
   }
 }

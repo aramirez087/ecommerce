@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/Card'
 import type { Order } from '@/lib/data/types'
 
 export const metadata = {
-  title: 'Order History - Store',
+  title: 'Order History - Velvet Toke',
   description: 'View your order history',
 }
 

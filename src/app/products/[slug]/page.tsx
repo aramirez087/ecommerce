@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: ProductPageProps) {
   }
 
   return {
-    title: `${product.name} - Store`,
+    title: `${product.name} - Velvet Toke`,
     description: product.description || `Buy ${product.name} at our store`,
   }
 }

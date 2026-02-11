@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/Card'
 import { SignInForm } from '@/components/auth'
 
 export const metadata = {
-  title: 'Sign In - Store',
+  title: 'Sign In - Velvet Toke',
   description: 'Sign in to your account',
 }
 

@@ -14,17 +14,20 @@ export function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-40 w-full border-b border-neutral-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+      <header className="sticky top-0 z-40 w-full border-b border-white/45 bg-[var(--surface)] backdrop-blur-xl">
         <Container>
-          <div className="flex h-16 items-center justify-between">
-            <Link href="/" className="text-xl font-bold text-neutral-900">
-              Store
+          <div className="flex h-16 items-center justify-between gap-4">
+            <Link
+              href="/"
+              className="text-sm font-semibold tracking-[0.26em] text-neutral-900 uppercase"
+            >
+              Velvet Toke
             </Link>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 sm:gap-4">
               <Navigation />
               <button
                 onClick={() => setIsSearchOpen(true)}
-                className="p-2 text-neutral-600 hover:text-neutral-900 transition-colors"
+                className="rounded-full border border-transparent p-2 text-neutral-600 transition-all hover:border-white/70 hover:bg-white/60 hover:text-neutral-900"
                 aria-label="Search"
               >
                 <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

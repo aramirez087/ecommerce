@@ -3,7 +3,7 @@ import { Container } from '@/components/layout/Container'
 import { CartPageContent } from '@/components/cart'
 
 export const metadata: Metadata = {
-  title: 'Shopping Cart - Store',
+  title: 'Shopping Cart - Velvet Toke',
   description: 'Review your shopping cart',
 }
 

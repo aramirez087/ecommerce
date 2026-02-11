@@ -2,10 +2,10 @@ import { Container } from './Container'
 
 export function Footer() {
   return (
-    <footer className="border-t border-neutral-200 bg-neutral-50">
+    <footer className="mt-16 border-t border-white/50 bg-[var(--surface)]">
       <Container>
-        <div className="py-8 text-center text-sm text-neutral-600">
-          <p>&copy; {new Date().getFullYear()} Store. All rights reserved.</p>
+        <div className="py-8 text-center text-xs tracking-[0.1em] text-neutral-600 uppercase">
+          <p>&copy; {new Date().getFullYear()} Velvet Toke. Curated smoking essentials.</p>
         </div>
       </Container>
     </footer>

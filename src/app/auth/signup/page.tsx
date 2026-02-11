@@ -3,7 +3,7 @@ import { Card, CardContent } from '@/components/ui/Card'
 import { SignUpForm } from '@/components/auth'
 
 export const metadata = {
-  title: 'Create Account - Store',
+  title: 'Create Account - Velvet Toke',
   description: 'Create a new account',
 }
 

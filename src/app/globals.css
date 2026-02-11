@@ -1,26 +1,115 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f4f6ef;
+  --foreground: #162019;
+  --surface: rgba(251, 252, 247, 0.76);
+  --surface-border: rgba(255, 255, 255, 0.62);
+  --accent: #2a5c44;
+  --accent-strong: #1b3c2c;
+  color-scheme: light;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-neutral-50: #f7f8f3;
+  --color-neutral-100: #eef2e7;
+  --color-neutral-200: #dce3d1;
+  --color-neutral-300: #c4ccb2;
+  --color-neutral-400: #9ba88a;
+  --color-neutral-500: #73805f;
+  --color-neutral-600: #5a654b;
+  --color-neutral-700: #434c38;
+  --color-neutral-800: #2f3629;
+  --color-neutral-900: #1e261f;
+  --color-neutral-950: #111611;
+  --color-brand-50: #f0f6f2;
+  --color-brand-100: #dceade;
+  --color-brand-200: #bdd4c2;
+  --color-brand-300: #9cbc9f;
+  --color-brand-400: #739d7d;
+  --color-brand-500: #4d7b61;
+  --color-brand-600: #386049;
+  --color-brand-700: #264131;
+  --font-sans: var(--font-manrope);
+  --font-mono: var(--font-jetbrains-mono);
+  --font-display: var(--font-space-grotesk);
 }
 
 body {
-  background: var(--background);
+  min-height: 100vh;
+  background-color: var(--background);
+  background:
+    radial-gradient(circle at 8% 12%, rgba(183, 211, 192, 0.35), transparent 26rem),
+    radial-gradient(circle at 92% 6%, rgba(210, 226, 194, 0.35), transparent 22rem),
+    linear-gradient(160deg, #f8f9f4 0%, var(--background) 48%, #eef4ea 100%);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-manrope), sans-serif;
+  letter-spacing: 0.01em;
+  text-rendering: optimizeLegibility;
+}
+
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.5;
+  background:
+    radial-gradient(circle at 18% 68%, rgba(182, 208, 183, 0.26), transparent 26rem),
+    radial-gradient(circle at 80% 82%, rgba(174, 199, 168, 0.2), transparent 20rem);
+}
+
+html {
+  background-color: var(--background);
+}
+
+main,
+header,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-space-grotesk), sans-serif;
+  letter-spacing: -0.015em;
+}
+
+a {
+  transition: color 200ms ease, opacity 200ms ease;
+}
+
+input,
+select,
+textarea {
+  border-radius: 0.85rem;
+}
+
+::selection {
+  background: rgba(84, 129, 101, 0.24);
+  color: #142016;
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+.groove-glow {
+  animation: breathe 10s ease-in-out infinite;
+}
+
+.groove-glow-delay {
+  animation: breathe 12s ease-in-out infinite 1.8s;
 }
